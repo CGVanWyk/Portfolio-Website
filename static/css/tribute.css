@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main#main {
+    background-color: #393852a6;
+}
+
+#tribute-info {
+    background-color: #393852;
+}
+
+#image {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+}
+
+.ui.raised.very.padded.text.container.segment {
+    text-align: center;
+}
+
+.ui.section.divider {
+    padding: 15px;
+}
+
+h3 {
+    position: relative;
+    top: 5px;
+}
+
+p {
+    text-transform: none;
+}

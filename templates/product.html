@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/product.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui grid">
+        <div class="computer only row">
+            <header class="nav" id="header">
+                <div>
+                    <img id="header-img" src="/static/images/productLogo.jpg"
+                        alt="Picture of company logo">
+                </div>
+                <nav id="nav-bar" class="ui blue inverted menu">
+                    <div class="right menu">
+                        <a class="blue item nav-link" href="#features">Features</a>
+                        <a class="blue item nav-link" href="#how-it-works">How It Works</a>
+                        <a class="blue item nav-link" href="#pricing">Pricing</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="tablet mobile only five column row">
+            <div class="right floated column">
+                <div class="ui menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui pushable segment">
+        <div class="ui right sidebar vertical menu">
+            <a class="blue item nav-link" href="#features">Features</a>
+            <a class="blue item nav-link" href="#how-it-works">How It Works</a>
+            <a class="blue item nav-link" href="#pricing">Pricing</a>
+        </div>
+        <div class="pusher">
+            <main class="container container-centered">
+                <img id="header-img" src="/static/images/productLogo.jpg" alt="Picture of company logo">
+                <h1 class="ui blue header">We sell affordable computer processors for your daily use</h1>
+                <section id="features">
+                    <div class="ui two column doubling grid">
+                        <div class="four wide column"></div>
+                        <div class="four wide column">
+                            <img id="cogs" src="/static/images/cogs-icon.png"
+                                alt=""></div>
+                        <div class="four wide column">
+                            <h2 class="ui blue header">High Performance Processors</h2>
+                            <p>We sell top range processors for your multi-processing needs</p>
+                        </div>
+                        <div class="four wide column"></div>
+                        <div class="four wide column"></div>
+                        <div class="four wide column">
+                            <img id="delivery"
+                                src="/static/images/delivery-options-header-blue2.png"
+                                alt=""></div>
+                        <div class="four wide column">
+                            <h2 class="ui blue header">Fast Delivery</h2>
+                            <p>We will deliver within 24-48 hours only on weekdays</p>
+                        </div>
+                        <div class="four wide column"></div>
+                        <div class="four wide column">
+                        </div>
+                    </div>
+                </section>
+                <section id="how-it-works">
+                    <div>
+                        <h2 id="header-video" class="ui blue header">How it works</h2>
+                    </div>
+                    <iframe id="video" width="626" height="352" src="https://www.youtube.com/embed/1vi1dIuSsa4"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </section>
+                <section id="pricing">
+                    <h2 id="header-price" class="ui blue header">Prices</h2>
+                    <div class="ui three doubling cards">
+                        <div class="card">
+                            <div class="ui medium centered image">
+                                <img src="/static/images/i5.jpg">
+                            </div>
+                            <div class="content">
+                                <h3 class="ui blue header">Intel Core i5 9400F</h3>
+                                <h4 class="ui massive yellow label">R3,589</h4>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="ui medium centered image">
+                                <img
+                                    src="/static/images/i7.jpg">
+                            </div>
+                            <div class="content">
+                                <h3 class="ui blue header">Intel 9th Gen Core i7-9700K</h3>
+                                <h4 class="ui massive yellow label">R7,749.00</h4>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="ui medium centered image">
+                                <img src="/static/images/i9.jpg">
+                            </div>
+                            <div class="content">
+                                <h3 class="ui blue header">Intel Core i9-9820X X-Series</h3>
+                                <h4 class="ui massive yellow label">R18,999.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ui green very padded text container segment">
+                    <form id="form" class="ui form" action="success.html">
+                        <div class="ui massive green label">High Quality Processors sold for a fair price</div>
+                        <div class="ui large icon input">
+                            <input name="email" id="email" type="email" placeholder="Enter your email address"
+                                required />
+                        </div>
+                        <input id="submit" type="submit" value="Get Started"
+                            class="ui fluid large submit button"></input>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="/static/js/product.js"></script>
+</body>
+
+</html>

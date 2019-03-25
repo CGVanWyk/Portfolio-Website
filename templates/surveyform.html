@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Semantic UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/surveyform.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="ui inverted very padded text container segment">
+            <form id="survey-form" method="GET" class="ui large form error">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">
+                    Let us know how we can improve Skyrim
+                </p>
+                <div class="ui inverted segment">
+                    <div class="ui inverted form">
+                        <div class="field">
+                            <label id="name-label">Name</label>
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input autofocus type="text" name="name" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label id="email-label">Email Address</label>
+                            <div class="ui left icon input">
+                                <i class="address book icon"></i>
+                                <input type="email" name="email" id="email" required
+                                    placeholder="Enter your E-mail Address">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label id="number-label">Age</label>
+                            <div class="ui left icon input">
+                                <i class="sort numeric down icon"></i>
+                                <input type="number" name="age" id="number" min="1" max="125" class="input-field"
+                                    placeholder="Enter your Age">
+                            </div>
+                        </div>
+                        <!-- Group Radio Buttons -->
+                        <div class="grouped fields">
+                            <div class="field">
+                                <label>Would you recommend Skyrim to a friend?</label>
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="recommend" value="1">
+                                    <label>Yes<input name="radio-buttons" value="1" type="radio"></label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="recommend" value="2">
+                                    <label>No<input name="radio-buttons" value="2" type="radio"></label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="recommend" value="3">
+                                    <label>Don't want to say<input name="radio-buttons" value="3" type="radio"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Group Checkboxes -->
+                        <div class="grouped fields">
+                            <div class="field">
+                                <label>What do you expect when buying a Bethesda game?</label>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="features" value="1">
+                                    <label>Single-Player Storyline</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="features" value="2">
+                                    <label>Co-Op feature</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="features" value="3">
+                                    <label>Multiplayer feature</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Category to improve on</label>
+                            <!-- Dropdown Menu -->
+                            <select id="dropdown" name="currentPos" class="dropdown">
+                                <option selected="selected" disabled value>Select an option</option>
+                                <option value="gameplay" class="item">Gameplay</option>
+                                <option value="storyline" class="item">Storyline</option>
+                                <option value="bugs" class="item">Bugs</option>
+                                <option value="other" class="item">Other</option>
+                            </select>
+                            <!-- User Comment -->
+                            <textarea id="comment" name="comment" placeholder="Leave a comment"></textarea>
+                        </div>
+                        <!-- Submit button -->
+                        <button id="submit" type="submit" class="ui fluid large submit button">Submit</button>
+                    </div>
+                </div>
+                <!-- Error Message List -->
+                <div class="ui inverted error message">
+                    <ul class="list">
+                        <li>Please enter your name</li>
+                        <li>Please enter your e-mail</li>
+                        <li>Please enter a valid e-mail</li>
+                        <li>Please enter your age</li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/static/js/surveyform.js"></script>
+</body>
+
+</html>

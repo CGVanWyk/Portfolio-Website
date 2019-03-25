@@ -1,0 +1,35 @@
+body {
+    background-image: url('/static/images/skyrimBackground.jpg');
+    background-repeat: no-repeat;
+    background-color: rgba(27, 28, 29, 1.0);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+label {
+    color: #d4d4d4;
+}
+
+.ui.inverted.very.padded.text.container.segment {
+    opacity: 0.9;
+}
+
+.ui.error.message {
+    visibility: hidden;
+}
+
+.field {
+    font-size: 16px;
+}
+
+.grouped.fields {
+    font-size: 16px;
+}

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.container-centered {
+    text-align: center;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    /*background: linear-gradient(to bottom, #006DAA, #b3b8bf, #b3b8bf, #b3b8bf, #006DAA);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: unset;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+html {
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.4em;
+}
+
+/* Navigation */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    background-color: #eee;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+}
+
+.container-centered {
+    text-align: center;
+}
+
+.nav {
+    background-color: #76e8ff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 5.75% auto 0 auto; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#header {
+    height: 0px;
+    background-color: white;
+}
+
+#header-img {
+    position: relative;
+    top: -165px;
+}
+
+#nav-bar {
+    position: fixed;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.right.menu {
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+}
+
+/* Mobile Version */
+
+@media(max-width:1024px) {
+    #nav-bar {
+        display: none;
+    }
+    #header-img {
+        position: relative;
+        height: 30px;
+    }
+    h1.ui.blue.header {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    h4.ui.massive.yellow.label {
+        font-size: 12px;
+    }
+    iframe#video {
+        width: 350px;
+    }
+    section.ui.green.very.padded.text.container.segment {
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile Sidebar */
+
+.ui.grid {
+    padding: 0 !important;
+}
+
+.pushable.segment {
+    margin: 0 !important;
+}
+
+/* Content */
+
+h1 {
+    position: relative;
+    bottom: 100px;
+}
+
+/* Features */
+
+#cogs {
+    width: 100px;
+}
+
+#delivery {
+    width: 100px;
+}
+
+/* How it works */
+
+#header-video {
+    padding-bottom: 15px;
+}
+
+#header-price {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#pricing {
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}

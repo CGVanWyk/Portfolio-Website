@@ -1,0 +1,296 @@
+/* Color Palette */
+
+/* https://coolors.co/f4d06f-ff8811-9dd9d2-fff8f0-392f5a */
+/* https://coolors.co/dad2d8-143642-0f8b8d-ec9a29-a8201a */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/static/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #222222;
+}
+
+.ui.labeled.icon.vertical.menu {
+    background-color: #f2711c;
+}
+
+h2.ui.inverted.header {
+    color: #392F5A;
+}
+
+h2.ui.blue.header {
+    position: relative;
+    bottom: 13px;
+}
+
+a.ui.blue.circular.huge.label {
+    position: relative;
+    top: 20px;
+}
+
+a.ui.red.circular.huge.label {
+    position: relative;
+    top: 20px;
+}
+
+a.item {
+    font-size: 20px;
+}
+
+#freeCodeCampImage {
+    width: 100%;
+}
+
+#freeCodeCampMainHeader {
+    margin-top: 5px;
+}
+
+#freeCodeCampHeader {
+    width: 100%;
+    background-color: #143642;
+}
+
+img#freeCodeCampImage {
+    margin-top: 15px;
+}
+
+a.ui.blue.circular.huge.label {
+    margin-bottom: 15px;
+}
+
+#footerHeader {
+    position: relative;
+    top: 8px;
+}
+
+div#socialMedia {
+    width: 125px;
+    position: relative;
+    right: 45px;
+}
+
+a.ui.big.red.inverted.label {
+    position: relative;
+    top: 38px;
+}
+
+p {
+    color: #392F5A;
+}
+
+.ui.borderless.main.menu {
+    background-color: #FF8811;
+}
+
+.main.container {
+    margin-top: 2em;
+}
+
+.main.menu {
+    margin-top: -32px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease, padding 0.5s ease;
+}
+
+.main.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.overlay {
+    float: left;
+    margin: 0em 3em 1em 0em;
+}
+
+.overlay .menu {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+.main.menu.fixed {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.overlay.fixed .menu {
+    left: 800px;
+}
+
+.text.container .left.floated.image {
+    margin: 2em 2em 2em -4em;
+}
+
+.text.container .right.floated.image {
+    margin: 2em -4em 2em 2em;
+}
+
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+}
+
+.ui.inverted.vertical.footer.segment {
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
+.ui.raised.very.padded.text.container.segment {
+    text-align: center;
+}
+
+.ui.raised.very.padded.text.container.segment {
+    background-color: orange;
+}
+
+/* New CSS For Glow Effect */
+
+#logoContainer {
+    background-color: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
+#container {
+    width: 500px;
+    margin: auto;
+}
+
+/*Neon*/
+
+#logoParagraph {
+    text-align: center;
+    font-size: 7em;
+    margin: 20px 0 20px 0;
+}
+
+#logoAnchor {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#logoParagraph:nth-child(1) #logoAnchor {
+    color: #fff;
+    font-family: Monoton;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+#logoParagraph:nth-child(1) #logoAnchor:hover {
+    color: #FF9900;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+#logoParagraph #logoAnchor:hover {
+    color: #ffffff;
+}
+
+p#logoParagraph {
+    margin: 0;
+    height: 175px;
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+}
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+}
+
+/*glow*/
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+}
+
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 650px) {
+    #logoContainer {
+        width: 100%;
+    }
+    #logoParagraph {
+        font-size: 3.5em;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:1024px) {
+    body {
+        background-image: none;
+        background-color: #222222;
+    }
+}
+
+@media(max-width:1199px) {
+    div#socialMedia {
+        position: relative;
+    }
+    div#contactDetails {
+        width: 250px;
+    }
+    a.item {
+        font-size: 16px;
+    }
+    a.ui.big.red.inverted.label {
+        position: relative;
+        top: 16px;
+    }
+}
+
+@media(max-width:767px) {
+    div#socialMedia {
+        width: 327.95px;
+        position: relative;
+        left: 1.6px;
+    }
+    div#contactDetails {
+        width: 327.94px;
+    }
+}
+
+@media(min-width:1200px) {
+    div#socialMedia {
+        width: 125px;
+        position: relative;
+        right: 45px;
+    }
+    a.item {
+        font-size: 20px;
+    }
+    a.ui.big.red.inverted.label {
+        position: relative;
+        top: 38px;
+    }
+}

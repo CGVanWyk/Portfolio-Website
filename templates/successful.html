@@ -1,0 +1,15 @@
+{% extends "automate.html" %}
+
+{% block body %}
+
+<div id="success" class="wrapper">
+    File processed successfully
+</div>
+<form action="{{ fileName }}" enctype="multipart/form-data" method="get">
+    <button class="button button2" type="submit">Download</button>
+</form>
+<div id="success" class="wrapper">
+    Filename: {{ fileName }}
+</div>
+
+{% endblock %}

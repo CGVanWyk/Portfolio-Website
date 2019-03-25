@@ -1,0 +1,12 @@
+{% extends "automate.html" %}
+
+{% block body %}
+
+<div id="failure" class="wrapper">
+    Error 2: Please select a method to process your file
+</div>
+<form action="/download" enctype="multipart/form-data" method="get">
+    <button class="button button2" type="submit">Download</button>
+</form>
+
+{% endblock %}

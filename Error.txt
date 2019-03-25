@@ -1,0 +1,4 @@
+	#############################################################################################################
+	# This error is happening due to multiple threads accessing the same filename variable at the same time.    #
+	# Resolution: Please rename your input file and try again.						    						#
+	#############################################################################################################

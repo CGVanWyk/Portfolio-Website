@@ -1,0 +1,12 @@
+{% extends "automate.html" %}
+
+{% block body %}
+
+<div id="failure" class="wrapper">
+    Error 1: Please rename your input file
+</div>
+<form action="Error.txt" enctype="multipart/form-data" method="get">
+    <button class="button button2" type="submit">Download</button>
+</form>
+
+{% endblock %}

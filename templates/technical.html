@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/technical.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui grid">
+        <div class="tablet mobile only five column row">
+            <div class="column">
+                <div class="ui menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui pushable segment">
+        <div class="ui sidebar vertical menu">
+            <a class="blue item" href="#Definition">Definition</a>
+            <a class="blue item" href="#Hello_World">Hello World</a>
+            <a class="blue item" href="#Conditions">Conditions</a>
+            <a class="blue item" href="#Loops">Loops</a>
+            <a class="blue item" href="#Variables">Variables</a>
+            <a class="blue item" href="#Arrays">Arrays</a>
+        </div>
+        <div class="pusher">
+            <main id="main-doc" class="ui vertical container segment stickySegment">
+                <div class="ui middle aligned stackable grid container">
+                    <div class="row">
+                        <div class="sixteen wide column">
+                            <h3 class="ui header">C Programming Language</h3>
+                        </div>
+                    </div>
+                    <div class="one column row">
+                        <div class="column">
+                            <div class="ui segment">
+                                <div class="ui left rail">
+                                    <nav id="navbar" class="ui sticky">
+                                        <header>
+                                            <h4 class="ui header">Contents</h4>
+                                        </header>
+                                        <div class="ui vertical fluid left tabular menu">
+                                            <a href="#Definition" class="item active nav-link">
+                                                Definition
+                                            </a>
+                                            <a href="#Hello_World" class="item nav-link">
+                                                Hello World
+                                            </a>
+                                            <a href="#Conditions" class="item nav-link">
+                                                Conditions
+                                            </a>
+                                            <a href="#Loops" class="item nav-link">
+                                                Loops
+                                            </a>
+                                            <a href="#Variables" class="item nav-link">
+                                                Variables
+                                            </a>
+                                            <a href="#Arrays" class="item nav-link">
+                                                Arrays
+                                            </a>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <section id="Definition" class="content main-section">
+                                    <header><a class="ui violet ribbon label">Definition</a></header>
+                                    <p></p>
+                                    <div class="ui big blue label">
+                                        <p>C is a high-level and general-purpose programming language that
+                                            is ideal for developing
+                                            firmware or portable applications. Originally intended for writing system
+                                            software, C
+                                            was
+                                            developed at Bell Labs by Dennis Ritchie for the Unix Operating System in
+                                            the
+                                            early
+                                            1970s.</p>
+                                    </div>
+                                </section>
+                                <p></p>
+                                <section id="Hello_World" class="content main-section">
+                                    <header><a class="ui violet ribbon label">Hello World</a></header>
+                                    <p></p>
+                                    <div class="ui big blue label">
+                                        <p>Here is an example of a C program:</p>
+                                        <code>
+                                            int main(void)
+                                            <br>
+                                            <br>
+                                            {
+                                            <br>
+                                            <br>
+                                            printf("hello, world\n");
+                                            <br>
+                                            <br>
+                                            }
+                                        </code>
+                                    </div>
+                                </section>
+                                <p></p>
+                                <section id="Conditions" class="content main-section">
+                                    <header><a class="ui violet ribbon label">Conditions</a></header>
+                                    <p></p>
+                                    <div class="ui big blue label">
+                                        <p>Conditions in C would look something like this:</p>
+                                        <code>
+                                            if (x < y) <br>
+                                                <br>
+                                                {
+                                                <br>
+                                                <br>
+                                                printf("x is less than y\n");
+                                                <br>
+                                                <br>
+                                                }
+                                                <br>
+                                                <br>
+                                                else if (x > y)
+                                                <br>
+                                                <br>
+                                                {
+                                                <br>
+                                                <br>
+                                                printf("x is greater than y\n");
+                                                <br>
+                                                <br>
+                                                }
+                                                <br>
+                                                <br>
+                                                else if (x == y)
+                                                <br>
+                                                <br>
+                                                {
+                                                <br>
+                                                <br>
+                                                printf("x is equal to y\n");
+                                                <br>
+                                                <br>
+                                                }
+                                        </code>
+                                    </div>
+                                </section>
+                                <p></p>
+                                <section id="Loops" class="content main-section">
+                                    <header><a class="ui violet ribbon label">Loops</a></header>
+                                    <p></p>
+                                    <div class="ui big blue label">
+                                        <p>Loops can be written like the following:</p>
+                                        <code>
+                                            while (true)
+                                            <br>
+                                            <br>
+                                            {
+                                            <br>
+                                            <br>
+                                            printf("hello, world\n");
+                                            <br>
+                                            <br>
+                                            }
+                                        </code>
+                                    </div>
+                                    <p></p>
+                                    <div class="ui big blue label">
+                                        <p>The above loop is called a while loop, but there is also different kinds of
+                                            loops,
+                                            like
+                                            for loops:</p>
+                                        <code>
+                                            for (int i = 0; i < 50; i++) <br>
+                                                <br>
+                                                {
+                                                <br>
+                                                <br>
+                                                printf("hello, world\n");
+                                                <br>
+                                                <br>
+                                                }
+                                        </code>
+                                    </div>
+                                </section>
+                                <p></p>
+                                <section id="Variables" class="content main-section">
+                                    <header><a class="ui violet ribbon label">Variables</a></header>
+                                    <p></p>
+                                    <div class="ui big blue label">
+                                        <p>Different variables can also be declared in the following way:</p>
+                                        <ol class="ui list">
+                                            <li value="*">bool x;</li>
+                                            <li value="*">char char;</li>
+                                            <li value="*">double num;</li>
+                                            <li value="*">float f;</li>
+                                            <li value="*">int i;</li>
+                                            <li value="*">string s;</li>
+                                        </ol>
+                                    </div>
+                                </section>
+                                <p></p>
+                                <section id="Arrays" class="content main-section">
+                                    <header><a class="ui violet ribbon label">Arrays</a></header>
+                                    <p></p>
+                                    <div class="ui big blue label">
+                                        <p>In memory, we can store variables one after another, back-to-back. And in C,
+                                            a list
+                                            of
+                                            variables stored, one after another in a contiguous chunk of memory, is
+                                            called an
+                                            array.
+                                            Strings are actually just arrays of characters. We can see this below:</p>
+                                        <code>
+                                            int main(void)
+                                            <br>
+                                            <br>
+                                            {
+                                            <br>
+                                            <br>
+                                            string s = get_string("Input: ");
+                                            <br>
+                                            <br>
+                                            printf("Output: ");
+                                            <br>
+                                            <br>
+                                            for (int i = 0; i < strlen(s); i++) <br>
+                                                <br>
+                                                {
+                                                <br>
+                                                <br>
+                                                printf("%c\n", s[i]);
+                                                <br>
+                                                <br>
+                                                }
+                                                <br>
+                                                <br>
+                                                }
+                                        </code>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="/static/js/technical.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="/static/css/automate.css" rel="stylesheet" />
+    <title>Automate XL</title>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">Automate XL</a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="wrapper">
+                    <form action="Rentmeester.xlsx" enctype="multipart/form-data" method="get">
+                        <button id="sampleData" class="button button1" type="submit">Download Sample Input</button>
+                    </form>
+                <form action="/processed" enctype="multipart/form-data" method="post">
+                    <button class="button button1"><input id="buttonDisplay" name="file" type="file">Choose
+                        File</button><br>
+                    <label class="radioContainer">Klinicare
+                        <input name="algorithm" type="radio" value="klinicare">
+                        <span class="circle"></span><br>
+                    </label><br>
+                    <label class="radioContainer">Rentmeester
+                        <input name="algorithm" type="radio" value="rentmeester">
+                        <span class="circle"></span><br>
+                    </label><br>
+                    <label class="radioContainer">Midlands
+                        <input name="algorithm" type="radio" value="midlands">
+                        <span class="circle"></span><br>
+                    </label><br>
+                    <button class="button button2" type="submit">Process</button>
+                </form>
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
